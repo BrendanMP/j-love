@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,600i");
 html {
   line-height: 1.15;
   /* 1 */
@@ -622,7 +622,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.03em; }
   body > * {
-    max-width: 38rem;
+    max-width: 36rem;
     margin: 0 auto;
     padding: 0 1rem; }
   body > nav {
@@ -658,7 +658,10 @@ h1, h2, h3, h4 {
   line-height: 1.33; }
 
 h1 {
-  margin: 0 0 0.75rem; }
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  font-weight: 600;
+  line-height: 1.2; }
 
 h2 {
   margin: 0 0 2rem;
@@ -675,7 +678,24 @@ p {
   margin: 0 0 1.5rem; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: red; }
 
 main > article {
   padding: 2.5rem 0; }
+
+.group-classes {
+  background: #1a1a1a;
+  max-width: 100%;
+  padding: 3rem; }
+  .group-classes h1 {
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1;
+    color: #fff;
+    max-width: 36rem;
+    margin: 0 auto;
+    text-align: right; }
+    .group-classes h1 span {
+      display: inline-block;
+      transform: translateY(-0.05em); }

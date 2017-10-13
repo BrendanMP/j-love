@@ -6,7 +6,7 @@
 // Google Font
 // =====================
 
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,600i');
 
 // Variables
 // =====================
@@ -28,7 +28,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.03em;
     > * {
-        max-width: 38rem;
+        max-width: 36rem;
         margin: 0 auto;
         padding: 0 1rem;
     }
@@ -71,13 +71,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    margin: 0 0 0.75rem;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 h2 {
     margin: 0 0 2rem;
     font-weight: 400;
     line-height: 1.4;
+
 }
 
 h3 {
@@ -94,6 +98,7 @@ p {
 
 a {
     text-decoration: none;
+    color: red;
 }
 
 main {
@@ -101,4 +106,25 @@ main {
         padding: 2.5rem 0;
 
     }
+}
+
+
+.group-classes {
+    background: $black;
+    max-width: 100%;
+    padding: 3rem;
+    h1 {
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 1;
+        color: $white;
+        max-width: 36rem;
+        margin: 0 auto;
+        text-align: right;
+        span {
+            display: inline-block;
+            transform: translateY(-0.05em);
+        }
+    }
+
 }
