@@ -1,0 +1,98 @@
+// HTML5 Boilerplate
+// =====================
+@import "vendor/normalize";
+@import "vendor/boilerplate";
+
+// Google Font
+// =====================
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600');
+
+// Variables
+// =====================
+@import "variables";
+
+// J-Love
+// =====================
+
+html {
+    font-size: 16px;
+    @media screen and (min-width: 40rem){
+        font-size:22px;
+    }
+}
+
+body {
+    font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, sans-serif;
+    color: $dark-gray;
+    line-height: 1.8;
+    letter-spacing: 0.025em;
+    > * {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    > nav {
+        background: $black;
+        color: $white;
+        min-width: 100%;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        text-align: center;
+        display: none;
+    }
+    > header {
+        position: relative;
+        max-width: 100%;
+        min-height: 60vh;
+        background: url("../img/johnny-love.jpg") top center;
+        background-size: cover;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($black,0.5);
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $black;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.33;
+}
+
+h2 {
+    margin: 0 0 2rem;
+}
+
+h3 {
+    margin: 4rem 0 1.5rem;
+}
+
+hr {
+    margin: 3rem 0;
+}
+
+p {
+    margin: 0 0 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    > article {
+        padding: 1.5rem 0;
+
+    }
+}
